@@ -165,3 +165,53 @@ body.light-mode .card {
 body.light-mode .footer {
   background-color: #dddddd;
 }
+
+.newsletter {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.newsletter h3 {
+  color: #1df29d;
+  margin-bottom: 1rem;
+}
+
+#newsletter-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#newsletter-form input {
+  padding: 0.75rem;
+  width: 250px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+}
+
+#newsletter-form button {
+  padding: 0.75rem 1.2rem;
+  background-color: #1df29d;
+  border: none;
+  color: #121212;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-message {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.form-message.success {
+  color: #1df29d;
+}
+
+.form-message.error {
+  color: #ff6b6b;
+}
