@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Header */
+.header {
+  background-color: #1e1e1e;
+  padding: 1rem 0;
+  border-bottom: 2px solid #1df29d;
+}
+
+.logo {
+  color: #1df29d;
+  font-size: 1.8rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1df29d;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1df29d10, #9f6bff10);
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  color: #1df29d;
+  margin-bottom: 1rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: #1df29d;
+  color: #121212;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Seções */
+section {
+  padding: 3rem 0;
+}
+
+.sobre h3,
+.beneficios h3,
+.tecnologias h3 {
+  font-size: 1.8rem;
+  color: #9f6bff;
+  margin-bottom: 1rem;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border: 1px solid #333;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Tecnologias */
+.tech-list {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.tech-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #1a1a1a;
+  font-size: 0.9rem;
+}
+.footer a {
+  color: #1df29d;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.btn-theme {
+  margin-top: 1rem;
+  background-color: #1df29d;
+  color: #121212;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body.light-mode {
+  background-color: #f2f2f2;
+  color: #121212;
+}
+
+body.light-mode .header {
+  background-color: #e2e2e2;
+  border-bottom: 2px solid #1df29d;
+}
+
+body.light-mode .logo {
+  color: #121212;
+}
+
+body.light-mode .nav-links a {
+  color: #121212;
+}
+
+body.light-mode .hero {
+  background: linear-gradient(135deg, #d0fce7, #e9dfff);
+}
+
+body.light-mode .card {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+body.light-mode .footer {
+  background-color: #dddddd;
+}
