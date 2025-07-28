@@ -21,15 +21,22 @@ form.addEventListener('submit', (e) => {
   const email = emailInput.value.trim();
   const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-  if (email === '') {
-    message.textContent = 'Por favor, preencha o campo de e-mail.';
-    message.className = 'form-message error';
-  } else if (!emailValido) {
-    message.textContent = 'Digite um e-mail válido.';
-    message.className = 'form-message error';
-  } else {
-    message.textContent = 'Inscrição realizada com sucesso!';
-    message.className = 'form-message success';
-    form.reset();
-  }
+ if (email === '') {
+  message.textContent = 'Por favor, preencha o campo de e-mail.';
+  message.className = 'form-message error';
+} else if (!emailValido) {
+  message.textContent = 'Digite um e-mail válido.';
+  message.className = 'form-message error';
+} else {
+  message.textContent = 'Inscrição realizada com sucesso!';
+  message.className = 'form-message success';
+  form.reset();
+}
+
+// 🕒 Apaga a mensagem após 3 segundos
+setTimeout(() => {
+  message.textContent = '';
+  message.className = 'form-message';
+}, 3000);
+
 });
