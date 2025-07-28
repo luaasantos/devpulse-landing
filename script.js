@@ -39,24 +39,29 @@ setTimeout(() => {
   message.className = 'form-message';
 }, 3000);
 
-document.addEventListener('DOMContentLoaded', () => {
-  const backToTopBtn = document.getElementById('back-to-top');
+// script.js
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 400) {
-      backToTopBtn.style.display = 'block';
-    } else {
-      backToTopBtn.style.display = 'none';
-    }
-  });
+const backToTopButton = document.getElementById('back-to-top');
 
-  backToTopBtn.addEventListener('click', () => {
+// Mostrar o botão quando o usuário rolar a página
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+
+// Rolar suavemente para o topo ao clicar no botão
+backToTopButton.addEventListener('click', () => {
+  setTimeout(() => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
-  });
+  }, 100); // pequeno delay com setTimeout()
 });
+
 
 
 
